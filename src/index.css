@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  width: 100%;
+  margin: 0;
+  font: 300 1px/1.4 'Helvetica Neue', 'sans-serif';
+  color: #444;
+  background: #022c43;
+  overflow: hidden;
+  display: block;
+}
+
+#root{
+  width: 100%
+}
+
+main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
