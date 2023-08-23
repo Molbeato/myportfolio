@@ -1,15 +1,26 @@
+.container{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .contact_container{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    border: solid 1px #e8db1f57 ;
 }
 
 .form_container {
     display: flex;
     justify-content: center;
+    gap: 1rem;
     flex-direction: column;
-    width: 50%;
+    width: 500px;
     font-size: 16px;
+    font-family: 'Coolvetica';
 }
     input {
       width: 100%;
@@ -20,7 +31,7 @@
       border: 1px solid rgb(220, 220, 220);
 
       &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
+        border: 2px solid #e8da1f;
       }
     }
 
@@ -36,7 +47,7 @@
       border: 1px solid rgb(220, 220, 220);
 
       &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
+        border: 2px solid #e8da1f;
       }
     }
 
@@ -45,9 +56,12 @@
     }
 
     input[type="submit"] {
+      font-family: 'Coolvetica';
       margin-top: 2rem;
       cursor: pointer;
-      background: rgb(249, 105, 14);
+      background: #de551f;
       color: white;
       border: none;
     }
+
+    

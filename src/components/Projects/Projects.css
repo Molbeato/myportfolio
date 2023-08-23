@@ -1,0 +1,53 @@
+.project_icon{
+    color: #e8da1f;
+    font-size: 2.5rem;
+
+    margin: 20px;
+}
+
+
+.container_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    background-color: #93928c47;
+    box-shadow: 5px 5px 5px 5px rgb(120, 120, 122);
+    gap: 2rem;
+}
+
+.project:hover{
+    border-color: rgba(246, 240, 240, 0.147);
+    
+    background: #e8db1f37;
+}
+
+.project-img{
+    border-radius: 1.5rem;
+
+}
+
+.project h2{
+    margin: 1.2rem 2rem;
+    font-size: 16px
+}
+
+svg:hover{
+    color: #fff;
+}
+
+i:hover{
+    color: #fff;
+}
+
+img{
+    height: 200px;
+}

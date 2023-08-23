@@ -10,11 +10,11 @@
     }
 
     h1{
-        color: white;
         font-size: 53px;
         margin: 0;
         font-weight: 400;
-        color: antiquewhite;
+        font-family: 'Coolvetica';
+        color: rgb(207, 201, 193);
 
         &::before{
             content: '<h1>';
@@ -24,11 +24,14 @@
             margin-top: -40px;
             left:15px;
             opacity: 0.6;
+            animation: fadeIn 1s 1.7s backwards;
+            font-family: 'La Belle Aurore';
         }
 
         &::after{
             content: '</h1>';
             color:#e8da1f;
+            font-family: 'La Belle Aurore';
             position: absolute;
             font-size: 18px;
             margin-top: 18px;
@@ -40,7 +43,7 @@
 }
 
 h2{
-    color: #70706e;
+    color: rgb(207, 201, 193);
     margin-top: 20px;
     font-weight: 400;
     font-size: 11px;

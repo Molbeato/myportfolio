@@ -31,11 +31,20 @@ const Sidebar = () => {
             <NavLink
             exact='true'
             activeclassname='active'
+            to='/projects'
+            className='projects_icon'
+            >
+                <i className='bx bx-food-menu' color="#e8da1f"></i>
+            </NavLink>
+            <NavLink
+            exact='true'
+            activeclassname='active'
             to='/contact'
             className='contact_icon'
             >
                 <FontAwesomeIcon icon={faEnvelope} color="#e8da1f"/>
             </NavLink>
+           
         </nav>
 
         <ul>

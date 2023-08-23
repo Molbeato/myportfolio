@@ -7,6 +7,10 @@
     z-index: 3;
     min-height: 500px;
 
+.projects_icon{
+    color: #e8da1f;
+}
+
 .logo{
     display: block;
     padding: 8px 0;
@@ -45,6 +49,10 @@ nav{
             color: #fff;
             
             svg{
+                opacity: 0;
+            }
+
+            i{
                 opacity: 0;
             }
     
@@ -87,11 +95,21 @@ nav{
             color: #e8da1f;
             
         }
-    }  
+    }
+
+    a.projects_icon{
+        &:after{
+            content: 'Projects';
+            color: #e8da1f; 
+        }
+    }
 
     a.active{
         svg{
-            color: #365cbb;
+            color: rgb(207, 201, 193);
+        }
+        i{
+            color: rgb(207, 201, 193);
         }
     }
  }

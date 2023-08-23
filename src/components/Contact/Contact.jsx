@@ -1,6 +1,8 @@
 import"./Contact.css"
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Grid } from  'react-loader-spinner'
+
 
 const Contact = () => {
 
@@ -18,6 +20,8 @@ const Contact = () => {
       });
   };
   return (
+    <>
+  <div className="container">
   <section className="contact_container">
       <form className="form_container" ref={form} onSubmit={sendEmail}>
         <label className="name" >Name</label>
@@ -29,6 +33,21 @@ const Contact = () => {
         <input type="submit" value="Send" />
     </form>
   </section>
+  </div>
+  <div className="loader">
+      <Grid
+        height="80"
+        width="80"
+        color= '#e8da1f'
+        ariaLabel="grid-loading"
+        radius="12.5"
+        wrapperStyle={{}}
+        wrapperClass=""
+        visible={true}
+      />
+  </div>
+  </>
+  
 
   )
 }

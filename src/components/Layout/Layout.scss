@@ -9,6 +9,13 @@
     top:35px;
 }
 
+.texture{
+    opacity: 0.05;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .tags{
     color: #e8da1f;
     opacity: 0.6;
@@ -29,7 +36,7 @@
     height: 90%;
     min-height: 566px;
     position: absolute;
-
+    opacity: 0;
     top: 5%;
     margin: 0 auto;
     z-index: 1;
@@ -59,7 +66,7 @@
         left: 10px;
 
         &::before{
-            content: '</h1>';
+            content: '<h1>';
             color:#e8da1f;
             position: absolute;
             font-size: 18px;
@@ -68,6 +75,7 @@
             line-height: 18px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
+            font-family: 'La Belle Aurore';
         }
 
         &::after{
@@ -81,12 +89,13 @@
             margin-left: 20px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
+            font-family: 'La Belle Aurore';
         }
     }
 
     p{
         font-style: 13px;
-        color: white;
+        color: rgb(226, 215, 215);
         font-family: sans-serif;
         min-width: fit-content;
         animation: pulse 1s;
