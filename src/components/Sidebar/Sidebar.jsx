@@ -2,8 +2,9 @@ import { Link, NavLink } from "react-router-dom";
 import "./Sidebar.scss";
 import logo from "../../assets/images/jm-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faHome, faNoteSticky, faUser } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import cv from "../../assets/images/cv-icon.png"
 
 const Sidebar = () => {
   return (

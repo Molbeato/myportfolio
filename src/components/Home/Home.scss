@@ -71,3 +71,26 @@ h2{
         color: #70706e;
     }
 }
+
+.me{
+    position: absolute;
+    right: 5%;
+    padding: 10px;
+    border: 2px solid #e8db1f57;
+}
+
+.img_container{
+position: absolute;
+top: 10%;
+right: 20%;
+}
+
+.me img{
+    height: 650px;
+    border-radius: 5px;
+}
+
+.home-links{
+    display: flex;
+    gap: 20px;
+}

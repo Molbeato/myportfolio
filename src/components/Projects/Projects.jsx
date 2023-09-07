@@ -3,12 +3,12 @@ import "./Projects.css"
 import cima from "../../assets/images/cima.png"
 import academloE from "../../assets/images/academloE.png"
 import randomWord from "../../assets/images/randomWord.png"
-import pokedex from "../../assets/images/pokedex.jpg"
+import pokedex from "../../assets/images/pokedex.png"
 import saveUser from "../../assets/images/saveUser.png"
 import weather from "../../assets/images/weather.png"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Grid } from  'react-loader-spinner'
+
 
 const Projects = () => {  
 
@@ -65,6 +65,7 @@ const Projects = () => {
   ]
   return (
     <>
+    
     <section className=" container projects_container">
       <div className="container_grid">
       {projects.map(({id, image, description, title, link, gitHub}) => (

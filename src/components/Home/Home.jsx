@@ -3,6 +3,8 @@ import "./Home.scss"
 import { Link } from 'react-router-dom'
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters"
 import { Grid } from  'react-loader-spinner'
+import me from "../../assets/images/me.jpg"
+import CV from "../../assets/docs/Jhonatan-Mendez_S-CV.pdf"
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -38,7 +40,16 @@ const Home = () => {
         />
         </h1>
         <h2>Full-Stack Developer</h2>
+        <div className="home-links">
         <Link to='/projects' className="flat-btn">My Projects</Link>
+        <a href={CV} className="flat-btn" download>My Curriculum</a>
+        </div>
+      </div>
+
+      <div className="img_container">
+        <div className="me">
+          <img src={me} alt="" />
+        </div>
       </div>
     </div>
   <div className="loader">
